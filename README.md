@@ -6,9 +6,9 @@ A debug backdoor bridge that receives commands over a UART serial interface and 
 
 ```
                      uart_apb_sys (system top)
-    ┌──────────────────────────────────────────────────────────────┐
-    │                                                              │
-    │   uart_apb_master (bridge)          apb_splitter             │
+    ┌─────────────────────────────────────────────────────────────┐
+    │                                                             │
+    │   uart_apb_master (bridge)          apb_splitter            │
     │  ┌──────────────────────┐      ┌─────────────────────┐      │
     │  │                      │      │                     │      │
   ──┼─>│ uart_rx -> cmd_parser├─APB─>│ addr decode  ──> S0 ├──>───┼── Slave 0
@@ -20,7 +20,7 @@ A debug backdoor bridge that receives commands over a UART serial interface and 
     │                                │              ──> S6 ├──>───┼── Slave 6
     │                                │              ──> S7 ├──>───┼── Slave 7
     │                                └─────────────────────┘      │
-    └──────────────────────────────────────────────────────────────┘
+    └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Modules
