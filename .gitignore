@@ -1,0 +1,20 @@
+# Build artifacts
+sim_build/
+*.vcd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code
+.claude/
+tb/sim
